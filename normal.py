@@ -51,12 +51,14 @@ from math import sqrt
 
 print('Решаем ax² + bx + c = 0')
 
-a,b,c = int(input('Введите a: ')), int(input('Введите b: ')), int(input('Введите c: '))
+a,b,c = float(input('Введите a: ')), float(input('Введите b: ')), float(input('Введите c: '))
 D = b ** 2 - 4 * a * c
+
+
 if a != 0:
     x1 = (-b + sqrt(abs(D))) / (2 * a)
     x2 = (-b - sqrt(abs(D))) / (2 * a)
-    print('x1 =', x1, 'x2 =', x2) if x1 != x2 else print('x =', x1)
+    print('Нет корней!') if D < 0 else print('x1 =', x1, 'x2 =', x2) if x1 != x2 else print('x =', x1)
 else:
     print('a не может быть равна 0')
 
