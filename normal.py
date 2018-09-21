@@ -19,6 +19,13 @@ for i in number:
         pass
 print(number, 'Самая большая цифра это -', a)
 
+# более короткая запись
+from random import randint
+
+number = str(randint(0,999999999))
+number_dict = [i for i in number]
+print(number, 'Самая большая цифра это -', max(number_dict))
+
 
 # Задача-2: Исходные значения двух переменных запросить у пользователя.
 # Поменять значения переменных местами. Вывести новые значения на экран.
