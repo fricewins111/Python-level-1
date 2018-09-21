@@ -49,7 +49,6 @@ print('Поменяли переменные:\n', 'первая =', one, '\n', '
 # math.sqrt(4) - вычисляет корень числа 4
 from math import sqrt
 
-print(sqrt(4))
 print('Решаем ax² + bx + c = 0')
 
 a,b,c = int(input('Введите a: ')), int(input('Введите b: ')), int(input('Введите c: '))
